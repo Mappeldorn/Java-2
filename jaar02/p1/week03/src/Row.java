@@ -19,7 +19,7 @@ public class Row {
         this.parkedCars[availableParkingSpot] = car;
     }
 
-    public void removeCarByLicensePlate(String licensePlate){
+    public void searchAndRemoveCarByLicensePlate(String licensePlate){
         for (int i = 0; i < this.parkedCars.length; i++){
             if(this.parkedCars[i] != null) {
                 if(Objects.equals(this.parkedCars[i].getLicensePlate(), licensePlate)){
@@ -45,4 +45,19 @@ public class Row {
         return -1;
     }
 
+    public char getId() {
+        return id;
+    }
+
+    public void setId(char id) {
+        this.id = id;
+    }
+
+    public Car[] getParkedCars() {
+        return parkedCars;
+    }
+
+    public void setParkedCars(Car[] parkedCars) {
+        this.parkedCars = parkedCars;
+    }
 }

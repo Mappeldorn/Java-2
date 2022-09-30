@@ -37,7 +37,7 @@ class RowTest {
     void removeCarByLicensePlate() {
 
         assertEquals("Occupied", rowA.getParkingSpotStauts(1), "failed");
-        rowA.removeCarByLicensePlate("27-JV-NV");
+        rowA.searchAndRemoveCarByLicensePlate("27-JV-NV");
         assertEquals("Free", rowA.getParkingSpotStauts(1), "failed");
         assertEquals("Occupied", rowA.getParkingSpotStauts(2), "failed");
 
