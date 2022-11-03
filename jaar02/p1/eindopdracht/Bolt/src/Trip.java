@@ -13,10 +13,6 @@ public class Trip {
         this.car.addDistance(distance);
     }
 
-    public void price(){
-        this.car.getPRICE_PKM();
-    }
-
     /**
      * Calculates price of the trip
      *

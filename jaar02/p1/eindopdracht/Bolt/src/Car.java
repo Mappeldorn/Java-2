@@ -17,10 +17,6 @@ public class Car {
         this.totalDistance = 0;
     }
 
-    public void calculatePrice(){
-
-    }
-
     /**
      * checks the format of the license plate and replace all incorrect characters
      *
